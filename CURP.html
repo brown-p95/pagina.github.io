@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html><head><title>Fomulario CURP</title><meta charset="utf-8">
+<link href="curp.css" rel="stylesheet">
+<style type="text/css"> label{display:block;margin:5px;}</style>
+<script type="text/javascript" src="curp.js"></script>
+
+<body>
+<div id="cabecera">
+<h3>Consulta tu Curp</h3>
+</div>
+
+<form name ="formularioDatos" method="get" action="accion1.html">
+
+<h2 id="para">Formulario de Datos</h2>
+<label>Nombre: <input id="nombreForm" type="text" name="nombre" /></label>
+<label>Primer apellido: <input id="apellido1Form" type="text" name="apellidos" /></label>
+<label>Segundo apellido: <input id="apellido2Form" type="text" name="apellidos" /></label>
+<label>Estado: <select name="estadoForm" id="estadoForm">
+    <option value="no">Seleccione uno...</option>
+    <option value="AS">Aguascalientes</option>
+    <option value="BC">Baja California</option>
+    <option value="BS">Baja California Sur</option>
+    <option value="CC">Campeche</option>
+    <option value="CS">Chiapas</option>
+    <option value="CH">Chihuahua</option>
+    <option value="CX">Ciudad de México</option>
+    <option value="CO">Coahuila</option>
+    <option value="CL">Colima</option>
+    <option value="DG">Durango</option>
+    <option value="DF">Estado de México</option>
+    <option value="GT">Guanajuato</option>
+    <option value="GR">Guerrero</option>
+    <option value="HG">Hidalgo</option>
+    <option value="JC">Jalisco</option>
+    <option value="MN">Michoacán</option>
+    <option value="MS">Morelos</option>
+    <option value="NT">Nayarit</option>
+    <option value="NL">Nuevo León</option>
+    <option value="OC">Oaxaca</option>
+    <option value="PL">Puebla</option>
+    <option value="QT">Querétaro</option>
+    <option value="QR">Quintana Roo</option>
+    <option value="SL">San Luis Potosí</option>
+    <option value="SL">Sinaloa</option>
+    <option value="SR">Sonora</option>
+    <option value="TC">Tabasco</option>
+    <option value="TS">Tamaulipas</option>
+    <option value="TL">Tlaxcala</option>
+    <option value="VZ">Veracruz</option>
+    <option value="YN">Yucatán</option>
+    <option value="ZS">Zacatecas</option>
+</select></label>
+<label>Fecha de nacimiento:  <input name="whFecNac" id="whFecNac" type="date" placeholder="dd/mm/aaaa"  size="10"></label>
+<label>Sexo: <select name="whGenero" id="whGenero">
+    <option value="no" disabled>Seleciona..</option>
+    <option value="H"> Hombre </option>
+       <option value="M"> Mujer </option>
+
+    </select> </label>
+<label><input id ="botonEnvio" type="button" value="Enviar" onclick="get_datos()"></label>
+<label id="nota">Nota: Cuando el nombre sea compuesto (formado por dos o más
+    palabras), siempre que no sea MARIA, MA., MA, o JOSE, J, J. en
+    cuyo caso solo utilizar el segundo nombre.</label>
+</form>
+
+</body>
+
+</html>
